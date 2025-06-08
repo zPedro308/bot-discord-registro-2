@@ -135,7 +135,7 @@ client.on('interactionCreate', async (interaction) => {
     const canalLogs = await client.channels.fetch('1381346489200148713');
 
     if (action === 'aceitar' && membro) {
-      const nick = ` ${nome}「${id}」`.slice(0, 32);
+      const nick = `#${id} ${nome}`.slice(0, 32);
       await membro.setNickname(nick).catch(() => null);
 
       const cargos = ['1313114123344674834', 'tag', 'tag', 'tag', 'tag'];
