@@ -45,7 +45,7 @@ client.on('interactionCreate', async (interaction) => {
           '📌 Certifique-se de preencher corretamente:\n' +
           '> 🔹 Nome In-Game\n> 🔹 ID In-Game\n\n' +
           '⏳ Sua solicitação será analisada por um membro autorizado.\n\n' +
-          '**Coloque somente seu Nome e Sobrenome, Boa sorte!** 🚓'
+          '**Coloque somente seu Nome e Sobrenome, Boa sorte!**'
         )
         .setColor(0x2f3136);
 
@@ -114,7 +114,7 @@ client.on('interactionCreate', async (interaction) => {
         .setStyle(ButtonStyle.Danger)
     );
 
-    const canal = await client.channels.fetch('1313114123357126722');
+    const canal = await client.channels.fetch('1381346489200148713');
     if (canal) await canal.send({ embeds: [embed], components: [row] });
 
     await interaction.reply({ content: '📨 Sua solicitação foi enviada com sucesso!', ephemeral: true });
